@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background: linear-gradient(135deg, #d189b7, #ff709d, #ffd5bc);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 90%;
+    max-width: 650px;
+    height: 150px;
+    padding: 10px;
+    border: 4px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #f9447e;
+  }
+  
+  div {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  #wordcount, #sentenceCount {
+    font-weight: bold;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
